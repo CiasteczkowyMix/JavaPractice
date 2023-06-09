@@ -23,7 +23,7 @@ public class Rzymskie {
                         if(liczbaRzymska.indexOf("C") < liczbaRzymska.lastIndexOf("M")){
                             output+=900;
                             x++;
-                        }else if (liczbaRzymska.indexOf("C") < liczbaRzymska.lastIndexOf("M")){
+                        }else if (liczbaRzymska.indexOf("C") < liczbaRzymska.lastIndexOf("D")){
                             output+= 400;
                             x++;
                         }
@@ -65,6 +65,7 @@ public class Rzymskie {
             }
             System.out.println(liczbaRzymska);
             System.out.println(rzymskieCheck(output));
+            System.out.println(output);
         if(liczbaRzymska.equals(rzymskieCheck(output)) && output < 4000 && output > 0) break;
         }
         System.out.println(output);
